@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slideshow.js"></script>
+    <title>Portfolio | Yusaku Matsuo</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img class="logo" src="images/logo.svg" alt="Yusaku Matsuo">
+                </a>
+            </h1>
+            <button class="hamburger" aria-label="メニュー" aria-controls="nav-menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button> <!-- /#nav-btn -->
+            <nav id="nav-menu" class="nav" aria-hidden="true">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#about-me">ABOUT ME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">WORKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:yusakumatsuo01@gmail.com">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contents">
+        <main class="main">
+            <section class="contents content-top">
+                <div class="title">
+                    <h1 class="title-caption">YUSAKU MATSUO<br>PORTFOLIO SITE</h1>
+                </div> <!-- /.title-caption -->
+                <ul>
+                    <li class="now"><img class="image1" src="images/wcb_cafe.png" alt="WCB CAFE"></li>
+                    <li><img class="image2" src="images/ogaki_hanten.png" alt="大垣飯店"></li>
+                    <li><img class="image3" src="images/hot_town_web.png" alt="HOT TOWN WEB"></li>
+                </ul>
+            </section>
+            <section class="contents" id="about-me">
+                <div class="content-title">
+                    <h2><span>■</span> ABOUT ME</h2>
+                </div>
+                <div class="profile">
+                    <div class="profile-figure">
+                        <img src="images/profile_figure.jpg" alt="PC">
+                    </div>
+                    <div class="profile-caption">
+                        <div class="name"><h2>YUSAKU MATSUO</h2></div> <!-- /.name-->
+                        <div class="career">
+                            <p>高等専門学校卒業後、クラウドサービスベンダーにて約2年勤務した後、通信制大学に編入学をしながら、Webデザイン・プログラミングの職業訓練を受講しております。</p>
+                            <br>
+                            <p>業務を通じてITやインフラの知識に触れる中で、より創造的な領域で価値を生み出す仕事がしたいと考えるようになりました。なかでも、Webサイト制作や動画制作など、見る人・使う人の心に届く表現を通じて、自分自身のアイデアを形にできるクリエイティブな事業に強く魅力を感じています。
+                            </p>
+                            <br>
+                            <p>今は、届け方だけでなく、届ける中身にも責任を持ち、ユーザー視点で価値を生み出せる制作者を目指して、日々学習に励んでいます。</p>
+                        </div> <!-- /.career -->
+                    </div> <!-- /.profile-caption -->
+                </div> <!-- /.profile -->
+            </section> <!-- /.content -->
+            <section class="contents" id="works">
+                <div class="content-title">
+                    <h2><span>■</span> WORKS</h2>
+                </div> <!--  /.content-title -->
+                <div class="grid-wrap">
+                    <div class="item">
+                        <a href="">
+                            <div class="item-figure"><img src="images/wcb_cafe.png" alt="WCB CAFE" class="item2"></div>
+                            <div class="item-title"><h3>カフェHP</h3></div>
+                        </a>
+                    </div> <!-- /.item -->
+                    <div class="item">
+                        <a href="">
+                            <div class="item-figure"><img src="images/ogaki_hanten.png" alt="大垣飯店" class="item1"></div>
+                            <div class="item-title"><h3>中華料理屋HP</h3></div>
+                        </a>
+                    </div> <!-- /.item -->
+                    <div class="item">
+                        <a href="">
+                            <div class="item-figure"><img src="images/hot_town_web.png" alt="HOT TOWN WEB" class="item3"></div>
+                            <div class="item-title"><h3>Web制作会社</h3></div>
+                        </a>
+                    </div> <!-- /.item -->
+                    <div class="item">
+                        <a href="">
+                            <div class="item-figure"><img src="images/practice_php.png" alt="php作品集" class="item4"></div>
+                            <div class="item-title"><h3>PHP応募フォーム作成</h3></div>
+                        </a>
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <a href="">
+                            <div class="item-figure"><img src="images/practice_psd_ai.png" alt="Photoshopとillustratorの作品集" class="item5"></div>
+                            <div class="item-title"><h3>Photoshop, illustrator作品集</h3></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div id="top-link">
+                <a href="#top"><p class="top-link-icon">&uarr;</p></a>
+            </div>
+        </main>
+        </div>
+        <footer>
+            <div id="footer-top">
+                <div id="footer-contact">
+                    <div class="footer-contact-left">
+                        <p>Contact</p>
+                    </div>
+                    <div class="footer-contact-right">
+                        <div class="footer-contact-right-item">
+                            <a class="footer-contact-right-link" href="mailto:xxx">ご連絡はこちらから</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom">
+                <p class="copyright"><small>&copy; 2025 Yusaku Matsuo. All rights reserved.</small></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
