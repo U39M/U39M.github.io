@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 $(function() {
     var topLinkIcon = $('.top-link-icon');
+
     // スクロールしてページトップから100に達したらボタンを表示
     $(window).on('load scroll', function() {
         if ($(this).scrollTop() > 100) {
