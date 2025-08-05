@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 html{
     scroll-behavior: smooth;
     animation-name: fade-in;
@@ -8,16 +8,17 @@ html{
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-@keyframes fade-in {
-    0% {
-        opacity: 0;
     }
 
-    100% {
-        opacity: 1;
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-}
 body{
     overflow-x: hidden;
 }
@@ -39,11 +40,11 @@ header{
     background-color: #2e2e2e;
 }
 header h1 a img{
-    padding: 0 16px;
+    padding: 0 32px;
 }
 .logo{
-    width: 300px;
-    margin-top: 3px;
+    width: 220px;
+    margin-top: 10px;
 }
 .contents{
     margin: 0 auto;
@@ -54,25 +55,57 @@ header h1 a img{
     top: 0;
     right: 0;
     z-index: 100;
-    width: 60px;
-    height: 60px;
+    width: 88px;
+    height: 88px;
     border: none;
     background: #2e2e2e;
     cursor: pointer;
 }
 .hamburger-line{
     position: absolute;
-    left: 10px;
+    left: 24px;
     width: 40px;
     height: 2px;
     background-color: #fff;
     transition: all .4s;
 }
 .hamburger-line:nth-child(1){
-    top: 20px;
+    top: 38px;
 }
 .hamburger-line:nth-child(2){
-    top: 40px;
+    top: 52px;
+}
+.hamburger.active .hamburger-line:nth-child(1){
+    left: 30px; 
+    transform: rotate(45deg) translateY(10px);
+}
+.hamburger.active .hamburger-line:nth-child(2){
+    left: 30px;
+    transform: rotate(-45deg) translateY(-10px);
+}
+@media(max-width: 768px) {
+    .hamburger {
+        width: 60px;
+        height: 60px;
+    }
+    .hamburger-line {
+        left: 15px;
+        width: 30px;
+    }
+    .hamburger-line:nth-child(1) {
+        top: 20px;
+    }
+    .hamburger-line:nth-child(2) {
+        top: 40px;
+    }
+    .hamburger.active .hamburger-line:nth-child(1) {
+        left: 25px;
+        transform: rotate(45deg) translateY(14px);
+    }
+    .hamburger.active .hamburger-line:nth-child(2) {
+        left: 25px;
+        transform: rotate(-45deg) translateY(-14px);
+    }
 }
 .nav{
     position: fixed;
@@ -106,9 +139,11 @@ header h1 a img{
     border-bottom: 1px solid #fff;
     font-size: 1.5rem;
     font-weight: bold;
+    transition: .4s;
 }
 .nav-link:hover{
-    opacity: .5;
+    transform: scale(1.1);
+    letter-spacing: 0.05em;
 }
 #contents section{
     display: grid;
@@ -160,8 +195,14 @@ header h1 a img{
     text-align: center;
 }
 .title-caption{
-    padding: 1em 0;
-    font-size: 4em;
+    padding: 16px 0 24px 0;
+    font-size: 3.2em;
+    font-family: 'Caveat', cursive;
+}
+@media(max-width: 768px){
+    .title-caption{
+        font-size: 1.8em;
+    }
 }
 .profile{
     display: flex;
@@ -188,20 +229,36 @@ header h1 a img{
 }
 .name{
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 16px;
+    font-size: 1.7em;
+    margin: 16px 0;
+}
+@media(max-width: 768px){
+    .name{
+        font-size: 1em;
+    }
+
+}
+.career p {
+    text-indent: 1em;
 }
 .content-title{
-    font-size: 2em;
+    font-size: 1.3em;
     margin-bottom: 24px;
 }
-.content-title span{
+@media(max-width: 768px){
+    .content-title{
+        font-size: 1em;
+    }
+}
+.content-title h2 span{
     color: #0047AB;
 }
 .grid-wrap{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
+
 }
 @media(max-width: 768px){
     .grid-wrap{
@@ -213,19 +270,20 @@ header h1 a img{
     width: 100%;
 }
 .item{
-    width: calc(33.333% - 26px);
+    width: calc(48% - 26px);
     margin-bottom: 50px;
     height: auto;
-}
-@media(max-width: 1080px){
-    .item{
-        width: calc(48% - 26px);
-    }
 }
 @media(max-width: 768px){
     .item{
         width: 100%;
     }
+}
+
+.item2{
+    width: calc(100% - 26px);
+    margin-bottom: 50px;
+    height: auto;
 }
 .item a{
     text-decoration: none;
@@ -234,8 +292,11 @@ header h1 a img{
     width: 100%;
     height: 100%;
 }
-.item-figure:hover{
-    opacity: .5;
+.item .item-figure{
+    transition: .4s;
+}
+.item .item-figure:hover{
+    transform: scale(1.1);
 }
 .item-title{
     height: 40%;
@@ -243,7 +304,39 @@ header h1 a img{
     font-weight: bold;
     text-align: center;
 }
-/* フッター */
+.slider-wrapper{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+.slider{
+    animation: scroll-left 20s infinite linear .5s both;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+}
+.slide{
+    min-width: 40%;
+    padding: 8px;
+}
+.slide img{
+    display: block;
+    margin : 0 auto;
+    max-width: 100%;
+    transition: transform .4s;
+}
+.slide img:hover{
+    transform: scale(1.1);
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-320%);
+    }
+}
 #footer{
     position: relative;
     width: 100vw;
@@ -314,6 +407,11 @@ header h1 a img{
     align-items: center;
     border-radius: 6px;
     padding: 24px;
+    transition: .4s;
+}
+.footer-contact-right-item:hover{
+    transform: scale(1.1);
+    letter-spacing: 0.1em;
 }
 .footer-contact-right-link{
     color: #fff;
@@ -321,8 +419,21 @@ header h1 a img{
     font-weight: bold;
     text-decoration: none;
 }
-.footer-contact-right-link:hover{
-    opacity: .5;
+@media (max-width: 915px){
+    .br{
+        word-wrap: break-word;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(max-width: 500px) {
+    .br {
+        word-wrap: break-word;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 #footer-bottom{
     position: relative;
@@ -330,9 +441,6 @@ header h1 a img{
     height: 240px;
     background-color: #2e2e2e;
 }
-/*
-    トップリンク
-*/
 .top-link-icon{
     position: fixed;
     right: 0;
@@ -345,6 +453,11 @@ header h1 a img{
     transition: .3s;
     opacity: 0;
     z-index: 100;
+}
+@media(max-width: 768px) {
+    .top-link-icon{
+        font-size: 30px;
+    }
 }
 .top-link-icon.active{
     opacity: 1;

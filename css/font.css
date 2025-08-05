@@ -1,0 +1,32 @@
+.libertinus-sans-regular {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libertinus-sans-bold {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libertinus-sans-regular-italic {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+.noto-sans-jp-100 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.noto-sans-jp-300 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
