@@ -194,6 +194,10 @@ header h1 a img{
 .title{
     text-align: center;
 }
+.title h2{
+    margin: 0 auto 30px;
+    padding: 0;
+}
 .title-caption{
     padding: 16px 0 24px 0;
     font-size: 3.2em;
@@ -236,7 +240,6 @@ header h1 a img{
     .name{
         font-size: 1em;
     }
-
 }
 .career p {
     text-indent: 1em;
@@ -252,6 +255,24 @@ header h1 a img{
 }
 .content-title h2 span{
     color: #0047AB;
+}
+.portfolio-info{
+
+}
+.portfolio-info table{
+}
+.portfolio-info table th{
+    font-size: 1em;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0.5em;
+    width: 40%;
+}
+.portfolio-info table td{
+    font-size: 1em;
+    margin: 0;
+    padding: 0.5em;
+    width: 60%;
 }
 .grid-wrap{
     display: flex;
