@@ -364,7 +364,7 @@ header h1 a img{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-320%);
+        transform: translateX(-160%);
     }
 }
 #footer{
