@@ -437,17 +437,13 @@ header h1 a img{
     align-items: center;
     border-radius: 6px;
     padding: 24px;
-    transition: .4s;
-}
-.footer-contact-right-item:hover{
-    transform: scale(1.1);
-    letter-spacing: 0.1em;
 }
 .footer-contact-right-link{
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
+    transition: .4s;
 }
 @media (max-width: 915px){
     .br{
@@ -464,6 +460,10 @@ header h1 a img{
         width: 100%;
         text-align: center;
     }
+}
+.footer-contact-right-link:hover{
+    transform:  scale(1.1);
+    letter-spacing: 0.1em;
 }
 #footer-bottom{
     position: relative;
