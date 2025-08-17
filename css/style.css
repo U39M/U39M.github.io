@@ -286,6 +286,9 @@ header h1 a img{
     width: 60%;
     border-bottom: #2e2e2e 1px solid;
 }
+.portfolio-info table p{
+    padding-bottom: 1em;
+}
 .grid-wrap{
     display: flex;
     flex-wrap: wrap;
