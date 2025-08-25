@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Nova+Round&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/slideshow.js"></script>
+    <title>Portfolio - Watercolor | Yusaku Matsuo</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="https://yusaku-matsuo.xrea.jp/">
+                    <img class="logo" src="../images/logo.svg" alt="Yusaku Matsuo">
+                </a>
+            </h1>
+            <button class="hamburger" aria-label="メニュー" aria-controls="nav-menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav id="nav-menu" class="nav" aria-hidden="true">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="https://yusaku-matsuo.xrea.jp/">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:yusakumatsuo01@gmail.com">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contents">
+            <main class="main">
+                <section class="contents content-top">
+                    <div class="title">
+                        <h1 class="title-caption libertinus-sans-regular">Photoshop 作品制作</h1>
+                        <h2 class="libertinus-sans-regular">水彩画風デザイン</h2>
+                    </div>
+                    <ul>
+                        <li class="now"><img src="../images/watercolor.webp" alt="Watercolor"></li>
+                    </ul>
+                </section>
+                <section class="contents">
+                    <div class="portfolio-info">
+                        <table>
+                            <tr>
+                                <th class="libertinus-sans-bold">解説</th>
+                                <td class="libertinus-sans-regular">
+                                    <p>本作品は、既存の人物写真をもとに、Photoshopを使用して水彩画風のデジタルアートとして仕上げたものです。制作過程では、まず被写体を切り抜き、2階調化によって輪郭を強調した後、スマートオブジェクト化を行いました。その上で、ガウスのぼかしによって質感を柔らかく整え、トーンカーブで背景を白く補正しております。背景にはプロンプトを用いて生成した黒インクの飛沫を追加し、さらに水彩のテクスチャを比較（明）モードで重ねることで、水彩特有のにじみを表現いたしました。最終的に背景全体を画用紙風に加工し、アナログ感のある仕上がりとしています。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="libertinus-sans-bold">目的</th>
+                                <td class="libertinus-sans-regular">
+                                    <p>本作品の目的は、写真をデジタル技術を駆使してアート作品として再構築する技法を習得することにあります。特に、複数の加工工程やプロンプトを組み合わせることで、写実的な要素と抽象的なアート表現を融合させ、ビジュアルデザインの幅を広げることを意図しております。また、広告、ポスター、パッケージデザインなどへの実務的な応用を見据えた制作でもあります。</p>
+                            </tr>
+                            <tr>
+                                <th>使用ツール</th>
+                                <td>Adobe Photoshop</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+        </div>
+
+        <div id="top-link">
+            <a href="#top">
+                <p class="top-link-icon">&uarr;</p>
+            </a>
+        </div>
+        </main>
+    </div>
+    <footer>
+        <div id="footer-top">
+            <div id="footer-contact">
+                <div class="footer-contact-left">
+                    <p>Contact</p>
+                </div>
+                <div class="footer-contact-right">
+                    <div class="footer-contact-right-item">
+                        <a class="footer-contact-right-link" href="mailto:yusakumatsuo01@gmail.com">ご連絡は<span
+                                class="br">こちらから</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <p class="copyright"><small>&copy; Yusaku Matsuo</small></p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
