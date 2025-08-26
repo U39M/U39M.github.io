@@ -289,6 +289,13 @@ header h1 a img{
 .portfolio-info table p{
     padding-bottom: 1em;
 }
+@media(max-width: 768px){
+    .portfolio-info table th, .portfolio-info table td{
+        display: block;
+        width: 100%;
+    }
+}
+
 .grid-wrap{
     display: flex;
     flex-wrap: wrap;
